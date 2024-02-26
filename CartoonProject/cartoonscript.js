@@ -52,3 +52,82 @@ ctx.beginPath();
 ctx.arc(405, 80, 20, 0, 2 * Math.PI);
 ctx.fill();
 ctx.closePath();
+
+// Drawing house 
+ctx.fillStyle = '#fca400'; 
+ctx.fillRect(340, 250, 100, 80); //sqaure for house
+
+ctx.fillStyle = '#9c701f';
+ctx.beginPath(); //roof
+ctx.moveTo(340, 250); 
+ctx.lineTo(440, 250); 
+ctx.lineTo(390, 200); 
+ctx.closePath();
+ctx.fill();
+
+ctx.fillStyle = '#918a8a'; 
+ctx.fillRect(350, 270, 30, 30);//window
+
+ctx.fillStyle = '#9c701f';
+ctx.fillRect(390, 270, 30, 60); //door
+
+ctx.fillStyle = '#000000';
+ctx.fillRect(410, 300, 5, 5); //door handle
+
+ctx.strokeStyle = '#000000'; //lines in window
+ctx.lineWidth = 2; 
+ctx.beginPath();
+ctx.moveTo(365, 270); 
+ctx.lineTo(365, 300); 
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(350, 285); 
+ctx.lineTo(380, 285); 
+ctx.stroke();
+
+// Drawing flower
+ctx.fillStyle = '#ff99cc'; 
+ctx.beginPath();
+ctx.arc(300, 300, 10, 0, 2 * Math.PI);
+ctx.fill();
+ctx.closePath();
+ctx.strokeStyle = '#00ff00'; // Drawing stem
+ctx.lineWidth = 2; 
+ctx.beginPath();
+ctx.moveTo(300, 310); 
+ctx.lineTo(300, 325); 
+ctx.stroke();
+ctx.closePath();
+
+// Drawing flower 2
+ctx.fillStyle = '#7607ba'; 
+ctx.beginPath();
+ctx.arc(270, 315, 10, 0, 2 * Math.PI);
+ctx.fill();
+ctx.closePath();
+ctx.strokeStyle = '#00ff00'; // Drawing stem
+ctx.lineWidth = 2; 
+ctx.beginPath();
+ctx.moveTo(270, 325); 
+ctx.lineTo(270, 340); 
+ctx.stroke();
+ctx.closePath();
+
+// Drawing flower 3
+ctx.fillStyle = '#d4113b'; 
+ctx.beginPath();
+ctx.arc(240, 300, 10, 0, 2 * Math.PI);
+ctx.fill();
+ctx.closePath();
+ctx.strokeStyle = '#00ff00'; // Drawing stem
+ctx.lineWidth = 2; 
+ctx.beginPath();
+ctx.moveTo(240, 310); 
+ctx.lineTo(240, 325); 
+ctx.stroke();
+ctx.closePath();
+
+// Caption
+ctx.font = '20px Helvetica';
+ctx.fillStyle = 'black';
+ctx.fillText('My Sunny, Peaceful Home', 130, 475);
