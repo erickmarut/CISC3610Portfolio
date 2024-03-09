@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Percentage Calculator</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+
+<body>
+
+    <h1>Stock Percentage Calculator</h1>
+
+    <form id="percentageForm">
+        <label for="number1">Enter Number 1:</label>
+        <input type="number" id="number1" required>
+
+        <label for="number2">Enter Number 2:</label>
+        <input type="number" id="number2" required>
+
+        <label>Choose calculation type:</label>
+        <label>
+            <input type="radio" name="calculationType" value="gain" checked> Percentage Gain
+        </label>
+        <label>
+            <input type="radio" name="calculationType" value="decrease"> Percentage Decrease
+        </label>
+
+        <button type="button" onclick="calculatePercentage()">Calculate</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+
+        <div id="result"></div>
+    </form>
+
+    <script src="formscript.js"></script>
+
+    <li><a href="..\index.html">Return to Portfolio</a></li>
+</body>
+
+</html>
