@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Lab</title>
+    <style>
+        .logo, .container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="pageLogo">
+    </div>
+
+    <div class="container">
+        <img src="piano.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_self" alt="Key1" title="Key1" coords="164,185,84,105" shape="rect" href="javascript:void(0)" onclick="playSound('key1.mp3')">
+            <area target="_self" alt="Key2" title="Key2" coords="165,106,244,180,305,234" shape="rect" href="javascript:void(0)" onclick="playSound('key2.mp3')">
+            <area target="_self" alt="Key3" title="Key3" coords="245,180,323,107" shape="rect" href="javascript:void(0)" onclick="playSound('key3.mp3')">
+            <area target="_self" alt="Key4" title="Key4" coords="324,180,409,105" shape="rect" href="javascript:void(0)" onclick="playSound('key4.mp3')">
+            <area target="_self" alt="Key5" title="Key5" coords="410,181,503,105" shape="rect" href="javascript:void(0)" onclick="playSound('key5.mp3')">
+        </map>
+        <audio id="audio"></audio>
+    </div>
+    <div class="logo">
+        <img src="instructions.png" alt="pageInstructions">
+    </div>
+    <li><a href="..\index.html">Return to Portfolio</a></li>
+
+    <script src="audioscript.js"></script>
+</body>
+
+</html>
