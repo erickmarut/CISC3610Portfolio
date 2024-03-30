@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <style>
+        .chart-wrapper {
+            position: relative;
+        }
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Erick Marut</h1>
+    <h1>Sample Charts for Data Visualization using Chart.js</h1>
+
+    <div class="chart-wrapper">
+        <canvas id="doughnut-chart" width="400" height="400"></canvas>
+    </div>
+    <div class="chart-wrapper">
+        <canvas id="horizontal-bar-chart" width="400" height="400"></canvas>
+    </div>
+
+    <h3>*Data used is not accurate, only for sample</h3>
+    <li><a href="..\index.html">Return to Portfolio</a></li>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script>
+        new Chart(document.getElementById("doughnut-chart"), {
+            type: 'doughnut',
+            data: {
+                labels: ["Ford", "Dodge", "BMW", "Honda", "Toyota"],
+                datasets: [
+                    {
+                        label: "Cars Sold (units)",
+                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                        data: [1889514, 199458, 362244, 1162531, 1928228]
+                    }
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Erick Marut Sample Doughnut Chart: Cars sold in the US for 2023'
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        new Chart(document.getElementById("horizontal-bar-chart"), {
+            type: 'horizontalBar',
+            data: {
+                labels: ["Kawasaki", "Yamaha", "Harley-Davidson", "Triumph", "Ducati"],
+                datasets: [
+                    {
+                        label: "Motorcyles Sold (units)",
+                        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                        data: [1853698, 956321, 1569425, 459236, 233547]
+                    }
+                ]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'Erick Marut Sample Horizontal Bar Chart: Motorcycles sold in the US for 2023'
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+</body>
+
+</html>
