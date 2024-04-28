@@ -9,13 +9,13 @@
     "description":"This is a PWA tutorial.",
     "icons":[
     {
-    "src":"/PWAproject/images/icon-192x192.png",                      
+    "src":"/CISC3610Portfolio/PWAproject/images/icon-192x192.png",                      
     "sizes":"192x192",
     "type":"image/png",
     "purpose": "any"
     },
     {
-    "src":"/PWAproject/images/icon-512x512.png",
+    "src":"/CISC3610Portfolio/PWAproject/images/icon-512x512.png",
     "sizes":"512x512",
     "type":"image/png",
     "purpose": "any"
